@@ -30,7 +30,7 @@ public class SelectionSort {
 
     // Main method to test the sorting
     public static void main(String[] args) {
-        int[] numbers = {64, 25, 12, 22, 11};
+        int[] numbers = {5, 1, 4, 2, 3};
 
         System.out.println("Original array:");
         printArray(numbers);
