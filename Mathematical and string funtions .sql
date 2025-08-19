@@ -1,0 +1,34 @@
+use employee;
+select * from emp;
+select concat(name,'-',job,'-',salary) as empdetail from emp;
+select ucase(name) from emp ;
+select lcase('MYSQL');
+select ltrim('  java');
+update emp set name='  smith' where salary=1000;
+select ltrim(name) from emp;
+select length('java  ');
+select length(rtrim('java   '));
+select reverse(name) from emp;
+select substr(name,2) from emp;
+select substr(name,2,2) from emp;
+select instr(name,'a') from emp;
+select replace(name,'a','----') from emp;
+select repeat(job,2) from emp;
+
+select ceil(1.1);
+select ceil(1.8);
+select floor(4.4);
+select floor(4.9);
+
+select round(5.6);
+select round(5.5);
+select round(5.3);
+select sqrt(81);
+select mod(125,5);
+select abs(-100);
+select abs(+100);
+select format(100000,0);
+select format(salary,0) from emp;
+select greatest(20,100,50);
+select greatest(salary,deptno,empno) from emp;
+select least(salary,deptno,empno) from emp;
